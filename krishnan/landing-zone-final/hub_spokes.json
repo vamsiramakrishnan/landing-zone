@@ -1,0 +1,69 @@
+{
+  "hub": {
+    "vcn": {
+      "cidr_block": "11.0.0.0/16",
+      "name": "Hub-VCN",
+      "compartment_name": "krishnan_kumar",
+      "dns_label": "hubdns",
+      "subnets": [
+        {
+          "cidr": "11.0.0.0/24",
+          "name": "hub-subnet",
+          "dns_name": "hubsubnet1",
+          "compartment_name": "krishnan_kumar",
+          "ispublic": "False",
+          "dhcp": {
+            "name": "master-hub-dns",
+            "options": [
+              {
+                "type": "DomainNameServer",
+                "customDnsServers": [],
+                "serverType": "VcnLocalPlusInternet"
+              },
+              {
+                "type": "SearchDomain",
+                "searchDomainNames": ["maindns.oraclevcn.com"]
+              }
+            ]
+          }
+        }
+      ],
+      "drg": {
+        "name": "HubDRG",
+        "compartment_name": "krishnan_kumar"
+      },
+      "lpg": {
+        "name": "HubLPG",
+        "compartment_name": "krishnan_kumar"
+      }
+    }
+  },
+  "spokes": [
+    {
+      "vcn": {
+        "cidr_block": "192.168.0.0/24",
+        "name": "spoke1",
+        "compartment_name": "krishnan_kumar",
+        "dns_label": "spoke1",
+        "subnets": [],
+        "lpg": {
+          "name": "Spoke1LPG",
+          "compartment_name": "krishnan_kumar"
+        }
+      }
+    },
+    {
+      "vcn": {
+        "cidr_block": "192.168.1.0/24",
+        "name": "spoke2",
+        "compartment_name": "krishnan_kumar",
+        "dns_label": "spoke2",
+        "subnets": [],
+        "lpg": {
+          "name": "Spoke2LPG",
+          "compartment_name": "krishnan_kumar"
+        }
+      }
+    }
+  ]
+}

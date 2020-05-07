@@ -1,0 +1,52 @@
+{
+  "compartments": [
+    {
+      "name": "compartment-1",
+      "description": "desc-c1",
+      "compartments": [
+        {
+          "name": "compartment-11",
+          "description": "desc-c11",
+          "compartments": [
+            {
+              "name": "compartment-111",
+              "description": "desc-c11"
+            },
+            {
+              "name": "compartment-112",
+              "description": "desc-c112",
+              "compartments": [
+                {
+                  "name": "compartment-1121",
+                  "description": "desc-c1111"
+                },
+                {
+                  "name": "compartment-1122",
+                  "description": "desc-c11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "compartment-12",
+          "description": "desc-c12"
+        }
+      ]
+    },
+    {
+      "name": "compartment-2",
+      "description": "desc-c1",
+      "compartments": [
+        {
+          "name": "compartment-21",
+          "description": "desc-c21"
+        },
+        {
+          "name": "compartment-22",
+          "description": "desc-c22"
+        }
+      ]
+    }
+  ]
+}

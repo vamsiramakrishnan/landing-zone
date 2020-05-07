@@ -1,0 +1,59 @@
+{
+    "users": [
+        {
+            "name": "user1",
+            "email": "abcde@example.com",
+            "description": "user1",
+            "defined_tags": "",
+            "freeform_tags": ""
+        },
+        {
+            "name": "user2",
+            "email": "abcde@example.com",
+            "description": "user2",
+            "defined_tags": "",
+            "freeform_tags": ""
+        },
+        {
+            "name": "user3",
+            "email": "abcde@example.com",
+            "description": "user3",
+            "defined_tags": "",
+            "freeform_tags": ""
+        }
+    ],
+    "groups": [
+        {
+            "name": "group1",
+            "description": "group1",
+            "defined_tags": "",
+            "freeform_tags": ""
+        },
+        {
+            "name": "group2",
+            "description": "group2",
+            "defined_tags": "",
+            "freeform_tags": ""
+        },
+        {
+            "name": "group3",
+            "description": "group3",
+            "defined_tags": "",
+            "freeform_tags": ""
+        }
+    ],
+    "user-group-mapping": [
+        {
+            "username": "user1",
+            "groupname": "group1"
+        },
+        {
+            "username": "user2",
+            "groupname": "group2"
+        },
+        {
+            "username": "user3",
+            "groupname": "group3"
+        }
+    ]
+}

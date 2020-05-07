@@ -1,0 +1,22 @@
+{
+    "policies": [
+        {
+            "name": "common-resource-admin-access",
+            "description": " allow administrative access where",
+            "compartment_name": "common-services",
+            "statements": [
+                "Allow group backup-administrators to manage volume-family in tenancy where target.compartment.name = '/*common-services*/'",
+                "Allow group compute-administrators to manage compute-family in tenancy where target.compartment.name = '/*common-services*/' "
+            ]
+        },
+        {
+            "name": "",
+            "description" : " ",
+            "compartment_name": "common-services",
+            "statements": [
+                "Allow group backup-administrators to manage volume-family in tenancy where target.compartment.name = '/*common-services*/'",
+                "Allow group compute-administrators to manage compute-family in tenancy where target.compartment.name = '/*common-services*/'"
+            ]
+        }
+    ]
+}
